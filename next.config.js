@@ -18,5 +18,5 @@ module.exports = withLess({
     lessLoaderOptions: {
         javascriptEnabled: true,
         modifyVars: themeVariables // make your antd custom effective
-    }
+    },
 })

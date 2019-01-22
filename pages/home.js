@@ -8,7 +8,7 @@ import {prefectWithRouter} from '../components/publickCompent'
 import Head from 'next/head'
 Router.events.on('routeChangeStart', (url)=>{console.log('App is changing to: ', url)})
 // @prefectWithRouter()
-// @Form.create()
+@Form.create()
 export default class Home extends React.Component{
     static async getInitialProps({ req }) {
         // const res = await fetch('https://api.github.com/repos/zeit/next.js');
@@ -54,6 +54,9 @@ export default class Home extends React.Component{
                     Click <span onClick={this.handler}>here</span> to read more
                 </div>
                 <Button type="primary" >antd</Button>
+                <Form>
+                    ffff
+                </Form>
             </div>
         )
     }
