@@ -5,6 +5,7 @@ export default () => (
         <ActiveLink href='/'>Home</ActiveLink>
         <ActiveLink href='/about'>About</ActiveLink>
         <ActiveLink href='/error'>Error</ActiveLink>
+        <ActiveLink href='/eor'>dor</ActiveLink>
     </div>
 )
 

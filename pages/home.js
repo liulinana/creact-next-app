@@ -4,6 +4,7 @@ import Router from 'next/router';
 import Header from '../components/Header'
 import MyLink from'../components/MyLink'
 import { Button, Form } from 'antd';
+import 'isomorphic-unfetch';
 import {prefectWithRouter} from '../components/publickCompent'
 import Head from 'next/head'
 Router.events.on('routeChangeStart', (url)=>{console.log('App is changing to: ', url)})
@@ -11,10 +12,11 @@ Router.events.on('routeChangeStart', (url)=>{console.log('App is changing to: ',
 @Form.create()
 export default class Home extends React.Component{
     static async getInitialProps({ req }) {
+        // eslint-disable-next-line no-undef
         // const res = await fetch('https://api.github.com/repos/zeit/next.js');
         // const json = await res.json();
         const userAgent = req ? req.headers['user-agent'] : navigator.userAgent;
-        return { userAgent }
+        return { userAgent,  }
     };
 
     handler = () => {
@@ -55,7 +57,7 @@ export default class Home extends React.Component{
                 </div>
                 <Button type="primary" >antd</Button>
                 <Form>
-                    ffff
+                    {/*{this.props.json}*/}
                 </Form>
             </div>
         )
