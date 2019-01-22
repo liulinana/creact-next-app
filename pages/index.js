@@ -17,7 +17,7 @@ export default class Home extends React.Component{
                     onMouseEnter={() => { Router.prefetch('/home'); console.log('prefetching /home!') }}
                 ><img src="/static/8c8c31b7be237a8057dc7174ee7ab102.jpg" alt="image" width="100"/></a>
             </Link>
-            <Button type="primary">antd</Button>
+            <Button type="primary" ghost>antd</Button>
             <div className="hero">
                 <h1 className="title">Welcome to Next!</h1>
                 <p className="description">
