@@ -2,19 +2,19 @@ import React from 'react'
 import Link from 'next/link'
 import Head from '../components/head'
 import Nav from '../components/nav'
-import { Button } from 'antd'
+import { Button, Form } from 'antd'
 import {connect} from 'react-redux'
 import {startClock, serverRenderClock} from '../store'
 import Examples from '../components/examples'
 import '../static/styles.less'
-import Router from "next/router";
+import Router from "next/router"
 
+@Form.create()
 class Home extends React.Component{
 
     static getInitialProps ({ reduxStore, req }) {
         const isServer = !!req;
         reduxStore.dispatch(serverRenderClock(isServer));
-
         return {}
     }
 
