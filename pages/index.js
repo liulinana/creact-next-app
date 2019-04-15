@@ -6,7 +6,7 @@ import { Button, Form } from 'antd'
 import {connect} from 'react-redux'
 import {startClock, serverRenderClock} from '../store'
 import Examples from '../components/examples'
-import '../static/styles.less'
+import '../static/styles.less';
 import Router from "next/router"
 
 @Form.create()

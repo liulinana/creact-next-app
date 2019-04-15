@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from '../components/Header'
+import Header from '../../components/Header'
 
 export default class About extends React.Component{
 
     state = {};
 
     componentWillMount () {
-        console.log("sss",this.props.url.query)
+        // console.log("sss",this.props.url.query)
     }
 
     render () {

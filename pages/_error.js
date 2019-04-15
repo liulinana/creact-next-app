@@ -8,10 +8,10 @@ export default class Error extends React.Component {
 
     render() {
         return (
-            <p>
+            <p style={{margin: "20% 45%"}}>
                 {this.props.statusCode
-                    ? `An error ${this.props.statusCode} occurred on server`
-                    : 'An error occurred on client'}
+                    ? `对不起小主(╯﹏╰)未找到页面 ${this.props.statusCode}`
+                    : '客户端出错'}
             </p>
         )
     }
