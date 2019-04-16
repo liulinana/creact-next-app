@@ -2,10 +2,10 @@ import ActiveLink from './ActiveLink'
 
 export default () => (
     <div>
-        <ActiveLink href='/'>Home</ActiveLink>
+        {/*<ActiveLink href='/'>Home</ActiveLink>*/}
         <ActiveLink href='/mock/about'>About</ActiveLink>
-        <ActiveLink href='/error'>Error</ActiveLink>
-        <ActiveLink href='/eor'>dor</ActiveLink>
+        {/*<ActiveLink href='/error'>Error</ActiveLink>*/}
+        {/*<ActiveLink href='/eor'>dor</ActiveLink>*/}
     </div>
 )
 

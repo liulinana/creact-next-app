@@ -7,12 +7,12 @@ const ActiveLink = ({ children, router, href }) => {
     }
 
     const handleClick = (e) => {
-        e.preventDefault()
-        router.push(href)
+        // e.preventDefault()
+        // router.push(href)
     }
 
     return (
-        <a href={href} onClick={handleClick} style={style}>
+        <a href={href} onClick={handleClick()} style={style}>
             {children}
         </a>
     )
