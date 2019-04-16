@@ -32,7 +32,7 @@ class FrameManage extends React.Component{
 
     state={
         theme: 'dark',
-        current: null,
+        current: "about",
         collapsed: false,
     };
 
