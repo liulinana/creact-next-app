@@ -58,7 +58,7 @@ class Home extends React.Component{
     };
 
     toLogin = () => {
-        this.props.history.push(`/`)
+        // this.props.history.push(`/`)
     };
 
 
@@ -97,22 +97,23 @@ class Home extends React.Component{
                                     onClick={this.toggle}
                                 />
                             </Col>
-                            <div onClick={this.toLogin} style={{marginLeft: '94%'}}>
-                                {/*<Link to={"#"}>*/}
-                                    <span style={{color:"white"}}>退出登录</span>
-                                    <Icon type="logout" />
-                                {/*</Link>*/}
+                            <div
+                                 onClick={this.toLogin}
+                                 style={{color:"white", marginLeft: '94%'}}
+                            >
+                                <span>退出登录</span>
+                                <Icon type="logout"/>
                             </div>
                         </Row>
                     </div>
                 </Header>
                 <Layout>
-                    <Frame width={200}
-                           style={{ background: '#fff' }}
-                           trigger={null}
-                           collapsible
-                           collapsed={this.state.collapsed}
-
+                    <Frame
+                       width={200}
+                       style={{ background: '#fff' }}
+                       trigger={null}
+                       collapsible
+                       collapsed={this.state.collapsed}
                     >
                         <Menu
                             mode="inline"
